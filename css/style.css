@@ -1,0 +1,462 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+/* header */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 25px;
+}
+
+/* logo */
+.site-logo {
+  margin-right: 20px;
+  width: 150px;
+}
+
+/* Navbar linklar */
+.site-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-item {
+  border-bottom: 2px solid #fff;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.site-nav-item.active {
+  border-bottom: 2px dashed #007fff;
+}
+
+.site-nav-item > a {
+  color: #000000;
+  font-size: 14px;
+  padding: 4px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.site-nav-item > a:hover {
+  color: #007fff;
+  opacity: 0.8;
+}
+
+.site-nav-item > a:active {
+  color: #111;
+  opacity: 0.6;
+}
+
+/* Tillar va profil */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-section {
+  margin-right: 14px;
+}
+
+/* header bottom */
+
+.header-bottom {
+  background-image: url(../img/header-bg-img.png);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-bottom-container {
+  position: relative;
+}
+
+/* header-card */
+
+.header-bottom-item {
+  max-width: 520px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  margin: auto;
+}
+.header-bottom-item > div {
+  display: flex;
+  align-items: center;
+  border-bottom: 5px solid #000;
+  margin: 0;
+}
+.tex1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 100px;
+  margin: 0;
+  margin-right: 15px;
+}
+.text2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  margin: 0;
+  text-align: left;
+}
+.text3 {
+  max-width: 450px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: auto;
+  margin-top: 20px;
+}
+.text3 > span {
+  font-weight: bold;
+}
+/* button */
+.main-btn {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 25px;
+  color: #ffffff;
+  padding: 15px 60px;
+  background-color: #007fff;
+  border-radius: 33px;
+  margin-top: 65px;
+}
+.main-btn:hover {
+  opacity: 0.8;
+}
+.main-btn:active {
+  opacity: 0.6;
+}
+
+/* global time */
+
+.global-time {
+  position: absolute;
+  top: -80px;
+  right: 35px;
+  text-align: center;
+  max-width: 150px;
+  width: 100%;
+}
+.time {
+  font-size: 80px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 30px;
+}
+.place {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* main-ijara */
+.ijara-top {
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.ijara-top-content {
+  max-width: 500px;
+  width: 100%;
+}
+.ijara-top-content > span {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 40px;
+}
+.ijara-top-content > p {
+  font-family: "Gilroy" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ijara-top-btn {
+  margin-bottom: 16px;
+}
+
+/* ijara bottom */
+
+.ijara-bottom {
+  position: relative;
+  margin-top: 30px;
+  background: linear-gradient(
+      360deg,
+      #000000 -5.79%,
+      rgba(196, 196, 196, 0) 42.44%
+    ),
+    url(.jpg);
+  border-radius: 35px;
+}
+
+.ijara-bottom > span {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  font-family: "Gilroy" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  padding: 8px 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.ijara-bottom > p {
+  position: absolute;
+  left: 28px;
+  bottom: 0;
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
+  color: #ffffff;
+  max-width: 350px;
+  width: 100%;
+}
+
+/* ijara card */
+
+.main-ijara-card {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 370px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.ijara-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-user {
+  font-size: 50px;
+}
+.ijara-user-item {
+  margin: 0;
+}
+.ijara-user-item1 {
+  font-family: "Gilroy" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 21px;
+}
+.ijara-user-item2 {
+  font-family: "Gilroy" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 21px;
+  color: #a6a6a6;
+}
+
+.room-quality {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.room-quality > span {
+  font-family: "Gilroy" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+.fa-heart {
+  font-size: 20px;
+  color: #ffb800;
+}
+.room-cost {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0;
+  margin-top: 10px;
+}
+.room-cost1 {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.room-cost2 {
+  text-decoration: line-through;
+}
+
+.room-equipment {
+  display: flex;
+  align-items: center;
+  color: #a5a5a5;
+  margin: 0;
+}
+.room-equipment > span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+}
+.room-equipment > div {
+  width: 110px;
+  margin-top: 15px;
+}
+.room-equipment > div:not(:last-child) {
+  margin-right: 100px;
+}
+.room-equipment .fas {
+  margin-right: 5px;
+}
+.ijara-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+.ijara-btns > a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  color: #ffffff;
+  padding: 11px 27px;
+  background-color: #007fff;
+  border-radius: 22px;
+  border: 2px solid #007fff;
+}
+.ijara-btns > a:hover {
+  background-color: #fff;
+  color: #007fff;
+}
+
+.main-ish-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 70px;
+}
+
+.ish-bottom-left {
+}
+
+.ish-bottom-card {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+
+}
+.ish-bottom-card:hover {
+  box-shadow: 0px 0px 4px 3px rgba(0, 127, 255, 0.25);
+  transform: scale(1.1);
+
+}
+
+.ish-bottom-card > div {
+  display: flex;
+  align-items: center;
+}
+.ish-bottom-card > div i {
+  font-size: 50px;
+  color: #007fff;
+  margin-right: 35px;
+}
+.ish-bottom-card>div>i:hover{
+  color: #000;
+}
+
+.ish-bottom-card > div span {
+  font-family: "Gilroy" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25.6391px;
+  line-height: 31px;
+  color: #007fff;
+}
+.ish-bottom-card > div span:hover{
+  color: #000;
+}
+
+.ish-bottom-card > p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #646464;
+  margin: 0;
+  margin-top: 20px;
+  display: inline-block;
+}
