@@ -219,7 +219,7 @@ a {
   justify-content: space-between;
 }
 .ijara-top-content {
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
 }
 .ijara-top-content > span {
@@ -281,7 +281,7 @@ a {
   font-size: 45px;
   line-height: 50px;
   color: #ffffff;
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
 }
 
@@ -459,4 +459,18 @@ a {
   margin: 0;
   margin-top: 20px;
   display: inline-block;
+}
+
+/* elchixona main */
+.elchixona-bottom{
+  margin: 0;
+  margin-top: 30px;
+}
+.elchixona-bottom-img1{
+  position: relative;
+}
+.elchixona-bottom-img2{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
